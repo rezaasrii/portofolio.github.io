@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Portofolio | Reza Asri</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/portofolio2022.css" />
+
+</head>
+
+<body>
+  <div class="tm-page-container mx-auto">
+    <header class="tm-header text-center">
+      <h1 class="tm-title text-uppercase"> MyPortofolio. </h1>
+      <p class="tm-primary-color">DESIGN GRAPHICS | SOFTWARE DEVELOPMENT </p>
+    </header>
+    <div class="tm-section">
+      <nav class="tm-nav">
+        <ul>
+          <li>
+            <a href="index.html"><span class="tm-nav-deco"></span>Intro</a>
+          </li>
+          <li class="active">
+            <a href="gallery.html"><span class="tm-nav-deco"></span>Gallery</a>
+          </li>
+          <li>
+            <a href="contact.html"><span class="tm-nav-deco"></span>Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="tm-content-container">
+        <div class="tm-content tm-content-2">
+          <p align="justify">
+            Ini adalah beberapa koleksi dari gallery saya yang ditawarkan, semoga anda menyukainya :)
+
+          </p>
+
+          <div class="container-fluid">
+            <div class="row tm-gallery" id="tmGallery">
+              <div class="col-sm-6 tm-gallery-item">
+                <figure class="effect-bubba">
+                  <img src="img/gallery/gallery-img-01.jpg" alt="Gallery item" class="img-fluid" />
+                  <figcaption>
+                    <h2>Fresh <span>Design</span></h2>
+                    <p>DESIGN INDONESIA</p>
+                    <a href="img/gallery/gallery-img-01.jpg">View more</a>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6 tm-gallery-item">
+                <figure class="effect-bubba">
+                  <img src="img/gallery/gallery-img-02.jpg" alt="Gallery item" class="img-fluid" />
+                  <figcaption>
+                    <h2>Fresh <span>Design</span></h2>
+                    <p>DESIGN JAPAN</p>
+                    <a href="img/gallery/gallery-img-02.jpg">View more</a>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6 tm-gallery-item">
+                <figure class="effect-bubba">
+                  <img src="img/gallery/gallery-img-03.jpg" alt="Gallery item" class="img-fluid" />
+                  <figcaption>
+                    <h2>Fresh <span>Design</span></h2>
+                    <p>DESIGN LOGO</p>
+                    <a href="img/gallery/gallery-img-03.jpg">View more</a>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6 tm-gallery-item">
+                <figure class="effect-bubba">
+                  <img src="img/gallery/gallery-img-04.jpg" alt="Gallery item" class="img-fluid" />
+                  <figcaption>
+                    <h2>Fresh <span>Design</span></h2>
+                    <p>DESIGN LOGO</p>
+                    <a href="img/gallery/gallery-img-04.jpg">View more</a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <footer>
+      <span>Portofolio 2022</span>
+      <span>Designed by Reza Asri</span>
+    </footer>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Magnific Pop up
+      // https://dimsemenov.com/plugins/magnific-popup/
+      $('.tm-gallery').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image',
+        gallery: {
+          enabled: true
+        },
+      });
+    });
+  </script>
+
+</body>
+</html>
